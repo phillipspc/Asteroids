@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Asteroids</h1>
-    <canvas width="600" height="600" id="game-canvas"></canvas>
+    <canvas width="900" height="600" id="game-canvas"></canvas>
 
     <script src="lib/palette.js"></script>
     <script src="lib/movingObject.js"></script>
@@ -19,9 +19,6 @@
     <script src="lib/gameView.js"></script>
     <script src="keymaster.js"></script>
 
-    <style type="text/css">
-      canvas { background: #011627;}
-    </style>
     <script type="text/javascript">
       var canvas = document.getElementById('game-canvas');
       var ctx = canvas.getContext('2d');
@@ -31,3 +28,8 @@
     </script>
   </body>
 </html>
+    <style type="text/css">
+      canvas {
+      margin: 0 auto;
+      }
+    </style>
