@@ -1,4 +1,6 @@
 # Palette-Asteroids
+[live](http://phillipspc.github.io/Palette-Asteroids/)
+
 Palette-Asteroids is my version of the classic game, built using JavaScript and Canvas. The controls are similar to the original; you can move the ship by rotating its direction and thrusting forward. To make things more fun, the color palette changes to a new configuration with each new level (10 options in total). The parallax stars in the background create a subtle 3-dimensional effect.
 
 ## Design
