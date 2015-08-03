@@ -6,10 +6,73 @@
   </head>
   <body>
     <h1>Asteroids</h1>
-    <div class="canvas">
-      <canvas width="900" height="600" id="game-canvas"></canvas>
+    <canvas width="900" height="600" id="game-canvas"></canvas>
+    <div class="game-info group">
+      <ul class="game-info-column">
+        <li><h2>Controls: </h2></li>
+        <li>
+          <div class="pair group">
+          <p class="left">Up:</p> <p class="right">Thrust</p>
+          </div>
+        </li>
+        <li>
+          <div class="pair group">
+          <p class="left">Left/Right:</p> <p class="right">Rotate Ship</p>
+          </div>
+        </li>
+        <li>
+          <div class="pair group">
+          <p class="left">Spacebar:</p> <p class="right">Shoot</p>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="game-info-column">
+        <li><h2>Info: </h2></li>
+        <li>
+          <div class="pair group">
+          <p class="left">Lives:</p> <p id='lives' class="right">3</p>
+          </div>
+        </li>
+        <li>
+          <div class="pair group">
+          <p class="left">Level:</p> <p id='level' class="right">1</p>
+          </div>
+        </li>
+        <li>
+          <div class="pair group">
+          <p class="left">Points:</p> <p id='points' class="right">0</p>
+          </div>
+        </li>
+        <li>
+          <div class="pair group">
+          <p class="left">Next Life Reward:</p> <p id='next-life' class="right">5000</p>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="game-info-column">
+        <li><h2>Color Palette: </h2></li>
+        <li>
+          <div class="pair group">
+          <p class="left">Shuffles on next level/restart</p>
+          </div>
+        </li>
+        <li>
+          <div class="pair group">
+          <p class="left">Current Palette:</p> <p class="right">IMG</p>
+          </div>
+        </li>
+        <li>
+          <div class="pair group">
+          <p class="left">Lock Palette</p> <p class="right">ON</p>
+          </div>
+        </li>
+      </ul>
     </div>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="lib/palette.js"></script>
     <script src="lib/movingObject.js"></script>
     <script src="lib/util.js"></script>
@@ -32,6 +95,77 @@
   </body>
 </html>
     <style type="text/css">
-      div.canvas {
+      html, body, h1, h2, div, title, ul, li
+      canvas, p {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font: inherit;
+        box-sizing: inherit;
+        text-align: inherit;
+        text-decoration: inherit;
+        vertical-align: inherit;
+        color: inherit;
+        background: transparent;
+        list-style: none;
+      }
+
+      .group:after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+
+      body {
+        font-family: impact;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 32px;
+        margin: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 0 0 10px 0;
+      }
+
+      li {
+        font-weight: normal
+      }
+
+      canvas {
+        display: block;
+        width: 900px;
+        height: 600px;
+        margin: 0 auto;
+      }
+
+      .game-info {
+        width: 900px;
+        margin: 10px auto;
+      }
+
+      .game-info-column {
+        display: block;
+        width: 300px;
+        float: left;
+      }
+
+      p.left {
+        float: left;
+        margin: 0 0 0 45px;
+      }
+
+      p.right {
+        float: right;
+        margin: 0 45px 0 0;
       }
     </style>
