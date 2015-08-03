@@ -60,7 +60,19 @@
         </li>
         <li>
           <div class="pair group">
-          <p class="left">Current Palette:</p> <p class="right">IMG</p>
+          <p class="left">Current Palette:</p>
+            <div class="palette group">
+              <div id="0" class="color">
+              </div>
+              <div id="1" class="color">
+              </div>
+              <div id="2" class="color">
+              </div>
+              <div id="3" class="color">
+              </div>
+              <div id="4" class="color">
+              </div>
+            </div>
           </div>
         </li>
         <li>
@@ -167,5 +179,19 @@
       p.right {
         float: right;
         margin: 0 45px 0 0;
+      }
+
+      div.palette {
+        float: right;
+        width: 100px;
+        background: black;
+        margin: 0 45px 0 0;
+      }
+
+      div.color {
+        float: left;
+        width: 18px;
+        height: 18px;
+        margin: 1px;
       }
     </style>
